@@ -21,17 +21,30 @@ inline string Email::getEmail() {
 
 class Estado {
 private:
-    string estado = A_FAZER;
+    string estado;
 public:
-    string const static A_FAZER = "a fazer";
-    string const static FAZENDO = "fazendo";
-    string const static FEITO = "feito";
+    const string A_FAZER = "a fazer";
+    const string FAZENDO = "fazendo";
+    const string FEITO = "feito";
     string getEstado();
-    void setEstado(string);
+    void setEstado(Estado);
 };
 
 inline string Estado::getEstado() {
     return this->estado;
+}
+
+class Identificador {
+private:
+    string identificador;
+public:
+    string getIdentificador();
+    bool static validaIdentificador(string);
+    void setIdentificador(string);
+};
+
+inline string Identificador::getIdentificador(){
+    return this->identificador;
 }
 
 #endif // DOMINIOS_HPP_INCLUDED
