@@ -1,0 +1,43 @@
+# Compiled object files
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Compiled dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Code::Blocks specific files
+*.depend
+*.layout
+*.cbTemp
+*.cbp.bak
+
+# Build directories
+bin/
+obj/
+
+# Backup and temporary files
+*~
+*.swp
+*.tmp
+*.bak
+
+# OS-specific files
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
