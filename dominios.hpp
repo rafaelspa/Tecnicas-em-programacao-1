@@ -19,4 +19,19 @@ inline string Email::getEmail() {
     return this->email;
 }
 
+class Estado {
+private:
+    string estado = A_FAZER;
+public:
+    string const static A_FAZER = "a fazer";
+    string const static FAZENDO = "fazendo";
+    string const static FEITO = "feito";
+    string getEstado();
+    void setEstado(string);
+};
+
+inline string Estado::getEstado() {
+    return this->estado;
+}
+
 #endif // DOMINIOS_HPP_INCLUDED

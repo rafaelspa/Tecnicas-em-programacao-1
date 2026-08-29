@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-    cout << "Dominio Email com validacao" << endl;
+    cout << "Dominio Estado" << endl;
     return 0;
 }

@@ -40,3 +40,11 @@ bool Email::validarEmail(string email) {
         return true;
     return false;
 }
+
+void Estado::setEstado(string estado) {
+    switch estado:
+    case Estado::A_FAZER:
+        this->estado = Estado::FAZENDO;
+    case Estado::FAZENDO:
+        this->estado = Estado::FEITO;
+}
