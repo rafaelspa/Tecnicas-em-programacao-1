@@ -36,6 +36,7 @@
 		<Unit filename="dominios.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="teste_validacoes_email.cpp" />
+		<Unit filename="testes_validar_estado.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

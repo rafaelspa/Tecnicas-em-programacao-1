@@ -4,19 +4,25 @@
 #include <string>
 using namespace std;
 
-class Email {
-private:
-    string email;
+class Dominio {
+protected:
+    string dominio;
 public:
+    string getDominio();
+};
+
+class Email: protected Dominio {
+private:
     bool validarParteLocal(string);
     bool validarDominio(string);
+public:
     bool validarEmail(string);
     string getEmail();
     void setEmail(string);
 };
 
 inline string Email::getEmail() {
-    return this->email;
+    return this->dominio;
 }
 
 class Estado {

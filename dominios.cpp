@@ -3,9 +3,8 @@
 #include <regex>
 
 
-
 void Email::setEmail(string email) {
-    this->email = email;
+    this->dominio = dominio;
 }
 
 bool Email::validarParteLocal(string email) {

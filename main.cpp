@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-    cout << "Dominio Estado" << endl;
+    cout << "Cria superclasse Dominio; Refatora" << endl;
     return 0;
 }

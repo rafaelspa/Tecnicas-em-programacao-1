@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void teste_validacoes_email () {
+void teste_validacoes_email() {
     string partelocal64 = "emailcom64caracteresparasertesteunitariodaclasseemailvalidacao12";
     string partelocal65 = "emailcom65caracteresparasertesteunitariodaclasseemailvalidacao123";
     string dominio255 = "emailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom25";
