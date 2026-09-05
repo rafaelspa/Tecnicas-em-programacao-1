@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-    cout << "Dominio Estado" << endl;
+    cout << "Arrumando os imports" << endl;
     return 0;
 }

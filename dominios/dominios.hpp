@@ -2,49 +2,12 @@
 #define DOMINIOS_HPP_INCLUDED
 
 #include <string>
-using namespace std;
+#include <regex>
 
-class Email {
-private:
-    string email;
-public:
-    bool validarParteLocal(string);
-    bool validarDominio(string);
-    bool validarEmail(string);
-    string getEmail();
-    void setEmail(string);
-};
+using namespace std; // string, regex e std precisam estar antes
 
-inline string Email::getEmail() {
-    return this->email;
-}
-
-class Estado {
-private:
-    string estado;
-public:
-    const string A_FAZER = "a fazer";
-    const string FAZENDO = "fazendo";
-    const string FEITO = "feito";
-    string getEstado();
-    void setEstado(Estado);
-};
-
-inline string Estado::getEstado() {
-    return this->estado;
-}
-
-class Identificador {
-private:
-    string identificador;
-public:
-    string getIdentificador();
-    bool static validaIdentificador(string);
-    void setIdentificador(string);
-};
-
-inline string Identificador::getIdentificador(){
-    return this->identificador;
-}
+#include "email.hpp"
+#include "estado.hpp"
+#include "identificador.hpp"
 
 #endif // DOMINIOS_HPP_INCLUDED

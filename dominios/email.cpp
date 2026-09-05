@@ -1,8 +1,4 @@
 #include "dominios.hpp"
-#include <string>
-#include <regex>
-
-
 
 void Email::setEmail(string email) {
     this->email = email;
@@ -41,17 +37,4 @@ bool Email::validarEmail(string email) {
     if (Email::validarParteLocal(pl) && Email::validarDominio(d))
         return true;
     return false;
-}
-
-void Estado::setEstado(Estado estado) {
-    if (estado.getEstado() == estado.A_FAZER) {
-        this->estado = estado.FAZENDO;
-    } else if (estado.getEstado() == estado.FAZENDO) {
-        this->estado = estado.FEITO;
-    }
-}
-
-bool Identificador::validaIdentificador(string identificador) {
-    regex r("(?=^.{6}$)([A-Za-z]{3}[0-9]{3})");
-    return (regex_match(identificador, r)) ? true : false;
 }
