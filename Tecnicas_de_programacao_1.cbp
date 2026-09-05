@@ -32,10 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="dominios.cpp" />
-		<Unit filename="dominios.hpp" />
+		<Unit filename="README.md" />
+		<Unit filename="dominios/dominios.cpp" />
+		<Unit filename="dominios/dominios.hpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="teste_validacoes_email.cpp" />
+		<Unit filename="testes/dominios/teste_validacoes_email.cpp" />
+		<Unit filename="testes/dominios/testes_validar_estado.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

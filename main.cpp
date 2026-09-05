@@ -1,4 +1,4 @@
-#include "dominios.hpp"
+#include "dominios/dominios.hpp"
 #include <iostream>
 
 using namespace std;
