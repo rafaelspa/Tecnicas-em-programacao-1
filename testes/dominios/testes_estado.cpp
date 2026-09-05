@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void teste_validar_estado () {
+void testes_estado () {
     Identificador identificador;
     string id = "abc123";
     cout << id + "  " << Identificador::validaIdentificador(id) << endl;
