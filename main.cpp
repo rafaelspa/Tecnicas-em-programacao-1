@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-    cout << "Dominio Limite" << endl;
+    cout << "Dominio Nome" << endl;
     return 0;
 }

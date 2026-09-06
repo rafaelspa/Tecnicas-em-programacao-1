@@ -10,5 +10,6 @@ using namespace std; // string, regex e std precisam estar antes
 #include "estado.hpp"
 #include "identificador.hpp"
 #include "limite.hpp"
+#include "nome.hpp"
 
 #endif // DOMINIOS_HPP_INCLUDED
