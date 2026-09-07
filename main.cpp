@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-    cout << "Dominio Papel e Prioridade" << endl;
+    cout << "Dominio Senha" << endl;
     return 0;
 }

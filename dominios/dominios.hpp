@@ -13,5 +13,6 @@ using namespace std; // string, regex e std precisam estar antes
 #include "nome.hpp"
 #include "papel.hpp"
 #include "prioridade.hpp"
+#include "senha.hpp"
 
 #endif // DOMINIOS_HPP_INCLUDED
