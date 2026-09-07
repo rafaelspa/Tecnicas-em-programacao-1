@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void testes_nome () {
+void testes_senha () {
     Senha senha = Senha("senha");
 
     cout << "valida senha \"" << senha.getSenha() << "\": " << senha.validaSenha() << endl;
