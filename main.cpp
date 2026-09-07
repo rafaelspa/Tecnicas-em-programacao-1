@@ -4,6 +4,6 @@
 using namespace std;
 
 int main() {
-    cout << "Dominios Tamanho e Texto" << endl;
+    cout << "Dominios Timestamp" << endl;
     return 0;
 }
