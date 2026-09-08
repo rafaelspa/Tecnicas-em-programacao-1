@@ -6,6 +6,7 @@ private:
     string senha;
 public:
     Senha(string);
+    Senha();
     string getSenha();
     void setSenha(string);
     bool validaSenha();

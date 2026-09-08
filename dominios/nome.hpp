@@ -8,6 +8,7 @@ private:
     string nome;
 public:
     Nome(string);
+    Nome();
     string getNome();
     void setNome(string);
     bool validaNome();

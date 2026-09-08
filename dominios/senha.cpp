@@ -4,6 +4,8 @@ Senha::Senha(string senha) {
     this->senha = senha;
 };
 
+Senha::Senha() { };
+
 void Senha::setSenha(string senha) {
     this->senha = senha;
 };
