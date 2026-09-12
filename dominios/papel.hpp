@@ -4,15 +4,15 @@
 class Papel {
 private:
     string papel;
+    void validar(string);
 public:
-    Papel();
-    string const GESTOR = "gestor";
-    string const DESENVOLVEDOR = "desenvolvedor";
-    string getPapel();
+    inline string static const GESTOR = "gestor";
+    inline string static const DESENVOLVEDOR = "desenvolvedor";
+    string getPapel() const;
     void setPapel(string);
 };
 
-inline string Papel::getPapel() {
+inline string Papel::getPapel() const {
     return papel;
 }
 

@@ -5,15 +5,14 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Nome" << endl;
+    cout << "Refatorando dominios: Papel" << endl;
 
-    Nome nome;
-    string n;
-    n = "Nome nome nome";
+    Papel papel;
 
-    nome.setNome(n);
-    cout << n + " ok" << endl;
-    nome.setNome("Nome invalido 1");
+    papel.setPapel(Papel::DESENVOLVEDOR);
+    papel.setPapel(Papel::GESTOR);
+    cout << "ok" << endl;
+    papel.setPapel("Papel Invalido");
 
     return 0;
 }
