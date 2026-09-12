@@ -5,14 +5,14 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Papel" << endl;
+    cout << "Refatorando dominios: Prioridade" << endl;
 
-    Papel papel;
+    Prioridade prioridade;
 
-    papel.setPapel(Papel::DESENVOLVEDOR);
-    papel.setPapel(Papel::GESTOR);
+    prioridade.setPrioridade(Prioridade::ALTA);
+    prioridade.setPrioridade(Prioridade::MEDIA);
+    prioridade.setPrioridade(Prioridade::BAIXA);
     cout << "ok" << endl;
-    papel.setPapel("Papel Invalido");
-
+    prioridade.setPrioridade("Prioridade invalida");
     return 0;
 }
