@@ -5,15 +5,14 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: email" << endl;
+    cout << "Refatorando dominios: Estado" << endl;
 
-    Email email;
+    Estado estado;
 
-    cout << "Seta email \"email@valido.com\"" << endl;
-    email.setEmail("email@valido.com");
-    cout << "Email " + email.getEmail() + " setado" << endl;
-    cout << "Seta email \"a\"" << endl;
-    email.setEmail("a");
+    estado.setEstado(Estado::A_FAZER);
+    estado.setEstado(Estado::FAZENDO);
+    estado.setEstado(Estado::FEITO);
+    estado.setEstado("Invalido");
 
     return 0;
 }
