@@ -6,17 +6,14 @@
 class Nome {
 private:
     string nome;
+    void validar(string);
 public:
-    Nome(string);
-    Nome();
-    string getNome();
+    string getNome() const;
     void setNome(string);
-    bool validaNome();
 };
 
-inline string Nome::getNome() {
+inline string Nome::getNome() const {
     return nome;
 }
-
 
 #endif // NOME_HPP_INCLUDED

@@ -5,13 +5,15 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Limite" << endl;
+    cout << "Refatorando dominios: Nome" << endl;
 
-    Limite limite;
+    Nome nome;
+    string n;
+    n = "Nome nome nome";
 
-    limite.setLimite(1);
-    cout << "1 ok" << endl;
-    limite.setLimite(100);
+    nome.setNome(n);
+    cout << n + " ok" << endl;
+    nome.setNome("Nome invalido 1");
 
     return 0;
 }

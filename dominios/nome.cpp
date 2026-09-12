@@ -1,16 +1,18 @@
 #include "dominios.hpp"
 
 void Nome::setNome(string nome) {
-    this->nome = nome;
+    try {
+        validar(nome);
+        this->nome = nome;
+    } catch (exception& e) {
+        cout << e.what() << endl;
+    }
 };
 
-Nome::Nome(string nome) {
-    this->nome = nome;
-};
-
-Nome::Nome() { };
-
-bool Nome::validaNome() {
-    regex r("(?=^.{1,15}$)([A-Za-z0-9]+[ ]?)+[^ ]");
-    return (regex_match(this->nome, r)) ? true : false;
+void Nome::validar(string nome) {
+    regex r("(?=^.{1,15}$)^[A-Za-z][A-Za-z ]+[A-Za-z]$");
+    if(regex_match(nome, r)) {
+        return;
+    }
+    throw invalid_argument("Nome invalido");
 };
