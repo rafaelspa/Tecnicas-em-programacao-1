@@ -1,20 +1,22 @@
 #include "dominios.hpp"
 
-Senha::Senha(string senha) {
-    this->senha = senha;
-};
-
-Senha::Senha() { };
-
-void Senha::setSenha(string senha) {
-    this->senha = senha;
-};
-
-bool Senha::validaSenha() {
+void Senha::validar(string senha) {
     // validar se tem pelo menos 1 uma letra e 1 numero, ambas as formas (letra+num ou num+letra) sao validas
     regex r("(?=^.{5}$)[A-Za-z]+[0-9]+");
     regex s("(?=^.{5}$)[0-9]+[A-Za-z]+");
-    bool teste_a_esquerda = regex_match(this->senha, r);
-    bool teste_a_direita = regex_match(this->senha, s);
-    return (teste_a_esquerda || teste_a_direita) ? true : false;
+    bool letraENumeroAEsquerda = regex_match(senha, r);
+    bool letraENumeroADireita = regex_match(senha, s);
+    if (letraENumeroAEsquerda || letraENumeroADireita) // soh 1 deles precisa estar certo
+        return;
+    throw invalid_argument("Senha invalida");
 };
+
+
+void Senha::setSenha(string senha) {
+    try {
+        validar(senha);
+        this->senha = senha;
+    } catch (exception& e) {
+        cout << e.what() << endl;
+    }
+}

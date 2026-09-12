@@ -5,14 +5,12 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Prioridade" << endl;
+    cout << "Refatorando dominios: Senha" << endl;
 
-    Prioridade prioridade;
+    Senha senha;
 
-    prioridade.setPrioridade(Prioridade::ALTA);
-    prioridade.setPrioridade(Prioridade::MEDIA);
-    prioridade.setPrioridade(Prioridade::BAIXA);
+    senha.setSenha("12asj");
     cout << "ok" << endl;
-    prioridade.setPrioridade("Prioridade invalida");
+    senha.setSenha("senha");
     return 0;
 }

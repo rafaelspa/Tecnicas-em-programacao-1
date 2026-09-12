@@ -4,15 +4,13 @@
 class Senha {
 private:
     string senha;
+    void validar(string);
 public:
-    Senha(string);
-    Senha();
-    string getSenha();
+    string getSenha() const;
     void setSenha(string);
-    bool validaSenha();
 };
 
-inline string Senha::getSenha() {
+inline string Senha::getSenha() const {
     return senha;
 };
 
