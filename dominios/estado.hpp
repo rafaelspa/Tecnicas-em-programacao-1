@@ -4,15 +4,16 @@
 class Estado {
 private:
     string estado;
+    void validar(string);
 public:
     const string A_FAZER = "a fazer";
     const string FAZENDO = "fazendo";
     const string FEITO = "feito";
-    string getEstado();
+    string getEstado() const;
     void setEstado(Estado);
 };
 
-inline string Estado::getEstado() {
+inline string Estado::getEstado() const {
     return this->estado;
 }
 

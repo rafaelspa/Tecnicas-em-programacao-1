@@ -3,6 +3,7 @@
 
 #include <string>
 #include <regex>
+#include <iostream>
 
 using namespace std; // string, regex e std precisam estar antes
 

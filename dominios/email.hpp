@@ -4,15 +4,15 @@
 class Email {
 private:
     string email;
-public:
     bool validarParteLocal(string);
     bool validarDominio(string);
-    bool validarEmail(string);
-    string getEmail();
+    void validar(string);
+public:
+    string getEmail() const;
     void setEmail(string);
 };
 
-inline string Email::getEmail() {
+inline string Email::getEmail()const {
     return this->email;
 }
 
