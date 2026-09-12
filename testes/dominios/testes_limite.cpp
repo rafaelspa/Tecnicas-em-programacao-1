@@ -7,6 +7,6 @@ using namespace std;
 void testes_limite () {
     Limite limite;
 
-    cout << "Limite minimo: " << limite.getLimiteMinimo() << endl;
-    cout << "Limite maximo: " << limite.getLimiteMaximo() << endl;
+    limite.setLimite(1);
+    limite.setLimite(100);
 }

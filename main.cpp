@@ -5,13 +5,13 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Identificador" << endl;
+    cout << "Refatorando dominios: Limite" << endl;
 
-    Identificador identificador;
+    Limite limite;
 
-    identificador.setIdentificador("abc123");
-    cout << "abc123 ok" << endl;
-    identificador.setIdentificador("aaaaaa");
+    limite.setLimite(1);
+    cout << "1 ok" << endl;
+    limite.setLimite(100);
 
     return 0;
 }

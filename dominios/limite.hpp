@@ -5,18 +5,15 @@ class Limite {
 private:
     int const limiteMinimo = 1;
     int const limiteMaximo = 25;
+    int limite;
+    void validar(int);
 public:
-    int getLimiteMinimo();
-    int getLimiteMaximo();
-    bool validaLimite(int);
+    int getLimite() const;
+    void setLimite(int);
 };
 
-inline int Limite::getLimiteMinimo() {
-    return limiteMinimo;
-};
-
-inline int Limite::getLimiteMaximo() {
-    return limiteMaximo;
+inline int Limite::getLimite() const {
+    return limite;
 };
 
 #endif // LIMITE_HPP_INCLUDED
