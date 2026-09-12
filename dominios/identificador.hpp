@@ -4,13 +4,13 @@
 class Identificador {
 private:
     string identificador;
+    void validar(string);
 public:
-    string getIdentificador();
-    bool static validaIdentificador(string);
+    string getIdentificador() const;
     void setIdentificador(string);
 };
 
-inline string Identificador::getIdentificador(){
+inline string Identificador::getIdentificador() const {
     return this->identificador;
 }
 

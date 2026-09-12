@@ -5,14 +5,13 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Estado" << endl;
+    cout << "Refatorando dominios: Identificador" << endl;
 
-    Estado estado;
+    Identificador identificador;
 
-    estado.setEstado(Estado::A_FAZER);
-    estado.setEstado(Estado::FAZENDO);
-    estado.setEstado(Estado::FEITO);
-    estado.setEstado("Invalido");
+    identificador.setIdentificador("abc123");
+    cout << "abc123 ok" << endl;
+    identificador.setIdentificador("aaaaaa");
 
     return 0;
 }
