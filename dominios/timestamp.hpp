@@ -4,14 +4,14 @@
 class Timestamp {
 private:
     string timestamp;
+    void validar(string);
+    void lancaExcecao();
 public:
-    Timestamp(string);
-    string getTimestamp();
+    string getTimestamp() const;
     void setTimestamp(string);
-    bool validaTimestamp();
 };
 
-inline string Timestamp::getTimestamp(){
+inline string Timestamp::getTimestamp()const {
     return timestamp;
 };
 

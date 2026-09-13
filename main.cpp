@@ -5,12 +5,12 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Texto" << endl;
+    cout << "Refatorando dominios: Timestamp" << endl;
 
-    Texto texto;
+    Timestamp timestamp;
 
-    texto.setTexto("Texto validoooo.");
+    timestamp.setTimestamp("01-JAN-2026-10:00");
     cout << "ok" << endl;
-    texto.setTexto("Texto invalido");
+    timestamp.setTimestamp("00-JAN-2016-10:00");
     return 0;
 }
