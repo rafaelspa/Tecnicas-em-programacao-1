@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando entidade: Pessoa" << endl;
+    cout << "Entidade: Cartao de Atividade" << endl;
 
     return 0;
 }

@@ -22,7 +22,7 @@ inline Email Pessoa::getEmail() const{
     return this->email;
 };
 
-inline void Pessoa::setEmail(Email email) {
+inline void Pessoa::setEmail(const Email email) {
     this->email = email;
 }
 
@@ -30,7 +30,7 @@ inline Nome Pessoa::getNome() const {
     return this->nome;
 };
 
-inline void Pessoa::setNome(Nome nome) {
+inline void Pessoa::setNome(const Nome nome) {
     this->nome = nome;
 }
 
@@ -38,7 +38,7 @@ inline Senha Pessoa::getSenha() const {
     return this->senha;
 };
 
-inline void Pessoa::setSenha(Senha senha) {
+inline void Pessoa::setSenha(const Senha senha) {
     this->senha = senha;
 }
 
@@ -46,7 +46,7 @@ inline Papel Pessoa::getPapel() const {
     return this->papel;
 };
 
-inline void Pessoa::setPapel(Papel papel) {
+inline void Pessoa::setPapel(const Papel papel) {
     this->papel = papel;
 }
 
