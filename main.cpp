@@ -5,12 +5,7 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Timestamp" << endl;
+    cout << "Refatorando entidade: Pessoa" << endl;
 
-    Timestamp timestamp;
-
-    timestamp.setTimestamp("01-JAN-2026-10:00");
-    cout << "ok" << endl;
-    timestamp.setTimestamp("00-JAN-2016-10:00");
     return 0;
 }

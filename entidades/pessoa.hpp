@@ -8,31 +8,46 @@ private:
     Senha senha;
     Papel papel;
 public:
-    Pessoa(Email, Nome, Senha, Papel);
-    Pessoa getPessoa();
-    Email getEmail();
-    Nome getNome();
-    Senha getSenha();
-    Papel getPapel();
-    void setNome(Nome);
-    void setSenha(Senha);
-    void setPapel(Papel);
+    Email getEmail() const;
+    void setEmail(const Email);
+    Nome getNome() const;
+    void setNome(const Nome);
+    Senha getSenha() const;
+    void setSenha(const Senha);
+    Papel getPapel() const;
+    void setPapel(const Papel);
 };
 
-inline Email Pessoa::getEmail(){
+inline Email Pessoa::getEmail() const{
     return this->email;
 };
 
-inline Nome Pessoa::getNome(){
+inline void Pessoa::setEmail(Email email) {
+    this->email = email;
+}
+
+inline Nome Pessoa::getNome() const {
     return this->nome;
 };
 
-inline Senha Pessoa::getSenha(){
+inline void Pessoa::setNome(Nome nome) {
+    this->nome = nome;
+}
+
+inline Senha Pessoa::getSenha() const {
     return this->senha;
 };
 
-inline Papel Pessoa::getPapel(){
+inline void Pessoa::setSenha(Senha senha) {
+    this->senha = senha;
+}
+
+inline Papel Pessoa::getPapel() const {
     return this->papel;
 };
+
+inline void Pessoa::setPapel(Papel papel) {
+    this->papel = papel;
+}
 
 #endif // PESSOA_HPP_INCLUDED
