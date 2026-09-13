@@ -4,14 +4,13 @@
 class Texto {
 private:
     string texto;
+    void validar(string);
 public:
-    Texto(string);
-    string getTexto();
+    string getTexto() const;
     void setTexto(string);
-    bool validaTexto();
 };
 
-inline string Texto::getTexto() {
+inline string Texto::getTexto() const {
     return this->texto;
 };
 

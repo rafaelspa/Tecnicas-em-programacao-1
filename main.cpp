@@ -5,14 +5,12 @@
 using namespace std;
 
 int main() {
-    cout << "Refatorando dominios: Tamanho" << endl;
+    cout << "Refatorando dominios: Texto" << endl;
 
-    Tamanho tamanho;
+    Texto texto;
 
-    tamanho.setTamanho(Tamanho::GRANDE);
-    tamanho.setTamanho(Tamanho::MEDIO);
-    tamanho.setTamanho(Tamanho::PEQUENO);
+    texto.setTexto("Texto validoooo.");
     cout << "ok" << endl;
-    tamanho.setTamanho("Tamanho invalido");
+    texto.setTexto("Texto invalido");
     return 0;
 }
