@@ -8,5 +8,7 @@ using namespace std; // string, regex e std precisam estar antes
 
 #include "../dominios/dominios.hpp"
 #include "pessoa.hpp"
+#include "cartao.hpp"
+#include "quadro.hpp"
 
 #endif // ENTIDADES_HPP_INCLUDED

@@ -3,8 +3,8 @@
 
 class Limite {
 private:
-    int const limiteMinimo = 1;
-    int const limiteMaximo = 25;
+    int limiteMinimo = 1;
+    int limiteMaximo = 25;
     int limite;
     void validar(int);
 public:
