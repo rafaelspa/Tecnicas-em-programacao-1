@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    cout << "Entidade: Quadro" << endl;
+    cout << "Entidade: Projeto" << endl;
 
     return 0;
 }

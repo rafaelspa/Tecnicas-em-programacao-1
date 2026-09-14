@@ -10,5 +10,6 @@ using namespace std; // string, regex e std precisam estar antes
 #include "pessoa.hpp"
 #include "cartao.hpp"
 #include "quadro.hpp"
+#include "projeto.hpp"
 
 #endif // ENTIDADES_HPP_INCLUDED
