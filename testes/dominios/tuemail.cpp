@@ -1,10 +1,54 @@
 #include <string>
 #include "../../dominios/dominios.hpp"
+#include "tuemail.hpp"
+
 #include <iostream>
 
  using namespace std;
 
-void testes_email () {
+ const string TUEmail::VALOR_VALIDO = "email@email.com";
+ const string TUEmail::VALOR_INVALIDO = "email";
+
+ void TUEmail::setUp(){
+    email = new Email();
+    estado = SUCESSO;
+}
+
+void TUEmail::tearDown(){
+    delete email;
+}
+
+void TUEmail::testarCenarioSucesso(){
+    try{
+        email->setEmail(VALOR_VALIDO);
+        if (email->getEmail() != VALOR_VALIDO)
+            estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        estado = FALHA;
+    }
+}
+
+void TUEmail::testarCenarioFalha(){
+    try{
+        email->setEmail(VALOR_INVALIDO);
+        estado = FALHA;
+    }
+    catch(invalid_argument &excecao){
+        if (email->getEmail() == VALOR_INVALIDO)
+            estado = FALHA;
+    }
+}
+
+int TUEmail::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
+    return estado;
+}
+
+
 //    string partelocal64 = "emailcom64caracteresparasertesteunitariodaclasseemailvalidacao12";
 //    string partelocal65 = "emailcom65caracteresparasertesteunitariodaclasseemailvalidacao123";
 //    string dominio255 = "emailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom25";
@@ -87,4 +131,3 @@ void testes_email () {
 //    cout << "email65e255        " << email.validarEmail(email65e255) << endl;
 //    cout << "email64e256        " << email.validarEmail(email64e256) << endl;
 //    cout << endl;
-}

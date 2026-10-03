@@ -56,19 +56,21 @@
 		<Unit filename="dominios/texto.hpp" />
 		<Unit filename="dominios/timestamp.cpp" />
 		<Unit filename="dominios/timestamp.hpp" />
+		<Unit filename="entidades/cartao.hpp" />
 		<Unit filename="entidades/entidades.hpp" />
-		<Unit filename="entidades/pessoa.cpp" />
 		<Unit filename="entidades/pessoa.hpp" />
+		<Unit filename="entidades/projeto.hpp" />
+		<Unit filename="entidades/quadro.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="testes/dominios/dominios.hpp" />
-		<Unit filename="testes/dominios/email.hpp" />
 		<Unit filename="testes/dominios/testesIdentificador.cpp" />
 		<Unit filename="testes/dominios/testesSenha.cpp" />
 		<Unit filename="testes/dominios/testesTexto.cpp" />
-		<Unit filename="testes/dominios/testes_email.cpp" />
 		<Unit filename="testes/dominios/testes_limite.cpp" />
 		<Unit filename="testes/dominios/testes_nome.cpp" />
 		<Unit filename="testes/dominios/testes_timestamp.cpp" />
+		<Unit filename="testes/dominios/tuemail.cpp" />
+		<Unit filename="testes/dominios/tuemail.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
