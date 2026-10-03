@@ -7,6 +7,8 @@ void Timestamp::validar(string timestamp){
     // modelo de timestamp valido DIA-MÊS-ANO-HORÁRIO
     // modelo de timestamp valido 01-JAN-2026-10:00
 
+     bool mostrar = false;
+
     string ts = timestamp;
 
     set<string> meses = {"JAN","FEB","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ"};
@@ -21,25 +23,39 @@ void Timestamp::validar(string timestamp){
 
     // antes de validar o dia, checar se o mes eh valido
     if (meses.find(m) == meses.end()){
+        if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
         lancaExcecao();
     }
-    if  (meses30dias.find(m) == meses30dias.end()) {
+
+    if  (meses.find(m) == meses.end()) {
+        if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
+        lancaExcecao();
+    }
+
+    if  (meses30dias.find(m) != meses30dias.end()) {
         if (d <= 0 || d > 30) {
+            if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
             lancaExcecao();
         }
     }
-    if  (meses31dias.find(m) == meses31dias.end()) {
+
+    if  (meses31dias.find(m) != meses31dias.end()) {
         if (d <= 0 || d > 31) {
+            if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
             lancaExcecao();
         }
     }
+
     if (a < 2000 || a > 2099) {
+        if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
         lancaExcecao();
     }
     if (hh < 0 || hh > 23) {
+        if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
         lancaExcecao();
     }
     if (mm < 0 || mm > 59) {
+        if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
         lancaExcecao();
     }
     // verifica ano bissexto
@@ -47,19 +63,23 @@ void Timestamp::validar(string timestamp){
         if (a % 4 == 0) {
             if (a % 100 != 0) {
                 if (d <= 0 || d > 29) { // eh bissexto
+                    if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
                     lancaExcecao();
                 }
             } else if (a % 400 == 0) {
                 if (d <= 0 || d > 29) { // eh bissexto
+                    if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
                     lancaExcecao();
                 }
             } else {
                 if (d <= 0 || d > 28) {
+                    if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
                     lancaExcecao();
                 }
             }
         } else {
             if (d <= 0 || d > 28) {
+                if (mostrar) cout << __LINE__ << " a " << __FILE__ << endl;
                 lancaExcecao();
             }
         };

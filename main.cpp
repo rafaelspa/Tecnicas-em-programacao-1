@@ -6,15 +6,11 @@
 using namespace std;
 
 int main() {
-    cout << "Teste Unitario: limite e nome" << endl;
+    cout << "Teste Unitario: timestamp" << endl;
 
-    TULimite tulimite;
+    TUTimestamp tutimestamp;
 
-    cout << tulimite.run() << endl;
-
-    TUNome tunome;
-
-    cout << tunome.run() << endl;
+    cout << tutimestamp.run() << endl;
 
     return 0;
 }

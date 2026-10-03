@@ -5,6 +5,7 @@
 #include "tuemail.hpp"
 #include "tulimite.hpp"
 #include "tunome.hpp"
+#include "tutimestamp.hpp"
 
 
 #endif // TUDOMINIOS_HPP_INCLUDED
