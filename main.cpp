@@ -1,17 +1,20 @@
 #include "dominios/dominios.hpp"
 #include "entidades/entidades.hpp"
-#include "testes/dominios/tuemail.hpp"
-#include "testes/dominios/dominios.hpp"
+#include "testes/dominios/tudominios.hpp"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    cout << "Teste Unitario: email" << endl;
+    cout << "Teste Unitario: limite e nome" << endl;
 
-    TUEmail tuemail;
+    TULimite tulimite;
 
-    cout << tuemail.run() << endl;
+    cout << tulimite.run() << endl;
+
+    TUNome tunome;
+
+    cout << tunome.run() << endl;
 
     return 0;
 }
