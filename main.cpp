@@ -1,16 +1,17 @@
 #include "dominios/dominios.hpp"
 #include "entidades/entidades.hpp"
 #include "testes/dominios/tudominios.hpp"
+#include "testes/entidades/tuentidades.hpp"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    cout << "Teste Unitario: timestamp" << endl;
+    cout << "Teste Unitario Dominio: Identificador" << endl;
 
-    TUTimestamp tutimestamp;
+    TUIdentificador tuidentificador;
 
-    cout << tutimestamp.run() << endl;
+    cout << tuidentificador.run() << endl;
 
     return 0;
 }

@@ -6,6 +6,7 @@
 #include "tulimite.hpp"
 #include "tunome.hpp"
 #include "tutimestamp.hpp"
+#include "tuidentificador.hpp"
 
 
 #endif // TUDOMINIOS_HPP_INCLUDED
