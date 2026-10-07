@@ -1,8 +1,6 @@
 #ifndef TUENTIDADES_HPP_INCLUDED
 #define TUENTIDADES_HPP_INCLUDED
 
-
 #include "tucartao.hpp"
-
 
 #endif // TUENTIDADES_HPP_INCLUDED
