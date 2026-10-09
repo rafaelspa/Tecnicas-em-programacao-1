@@ -62,15 +62,24 @@
 		<Unit filename="entidades/projeto.hpp" />
 		<Unit filename="entidades/quadro.hpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="testes/dominios/dominios.hpp" />
-		<Unit filename="testes/dominios/testesIdentificador.cpp" />
-		<Unit filename="testes/dominios/testesSenha.cpp" />
-		<Unit filename="testes/dominios/testesTexto.cpp" />
-		<Unit filename="testes/dominios/testes_limite.cpp" />
-		<Unit filename="testes/dominios/testes_nome.cpp" />
-		<Unit filename="testes/dominios/testes_timestamp.cpp" />
+		<Unit filename="testes/dominios/tudominios.hpp" />
 		<Unit filename="testes/dominios/tuemail.cpp" />
 		<Unit filename="testes/dominios/tuemail.hpp" />
+		<Unit filename="testes/dominios/tuidentificador.cpp" />
+		<Unit filename="testes/dominios/tuidentificador.hpp" />
+		<Unit filename="testes/dominios/tulimite.cpp" />
+		<Unit filename="testes/dominios/tulimite.hpp" />
+		<Unit filename="testes/dominios/tunome.cpp" />
+		<Unit filename="testes/dominios/tunome.hpp" />
+		<Unit filename="testes/dominios/tusenha.cpp" />
+		<Unit filename="testes/dominios/tusenha.hpp" />
+		<Unit filename="testes/dominios/tutexto.cpp" />
+		<Unit filename="testes/dominios/tutexto.hpp" />
+		<Unit filename="testes/dominios/tutimestamp.cpp" />
+		<Unit filename="testes/dominios/tutimestamp.hpp" />
+		<Unit filename="testes/entidades/tucartao.cpp" />
+		<Unit filename="testes/entidades/tucartao.hpp" />
+		<Unit filename="testes/entidades/tuentidades.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

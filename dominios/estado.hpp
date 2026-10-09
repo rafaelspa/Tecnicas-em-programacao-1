@@ -6,7 +6,7 @@ private:
     string estado;
     void validar(string);
 public:
-    inline static const std::string A_FAZER = "A FAZER";
+    inline static const std::string A_FAZER = "a fazer";
     inline static const std::string FAZENDO = "fazendo";
     inline static const std::string FEITO = "feito";
     string getEstado() const;
