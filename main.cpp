@@ -7,11 +7,11 @@
 using namespace std;
 
 int main() {
-    cout << "Teste Unitario Dominio: Identificador" << endl;
+    cout << "Teste Unitario Entidade: Pessoa" << endl;
 
-    TUIdentificador tuidentificador;
+    TUPessoa tupessoa;
 
-    cout << tuidentificador.run() << endl;
+    cout << tupessoa.run() << endl;
 
     return 0;
 }
