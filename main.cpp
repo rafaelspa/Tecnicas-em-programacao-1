@@ -7,11 +7,11 @@
 using namespace std;
 
 int main() {
-    cout << "Teste Unitario Entidade: Projeto" << endl;
+    cout << "Teste Unitario Entidade: Quadro" << endl;
 
-    TUProjeto tuprojeto;
+    TUQuadro tuquadro;
 
-    cout << tuprojeto.run() << endl;
+    cout << tuquadro.run() << endl;
 
     return 0;
 }
