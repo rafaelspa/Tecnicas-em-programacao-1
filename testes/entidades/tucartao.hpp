@@ -22,7 +22,7 @@ class TUCartaoDeAtividade {
     public:
         const string VALOR_VALIDO_IDENTIFICADOR = "abc123";
         const string VALOR_VALIDO_NOME = "Nome valido";
-        const string VALOR_VALIDO_DESCRICAO = "Descricao";
+        const string VALOR_VALIDO_DESCRICAO = "Descricao.";
         const string VALOR_VALIDO_PRIORIDADE = "alta";
         const string VALOR_VALIDO_ESTADO = "a fazer";
         const string VALOR_VALIDO_TAMANHO = "grande";

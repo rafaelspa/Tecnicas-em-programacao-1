@@ -5,12 +5,12 @@ void Texto::validar(string texto){
     regex r("(?=^.{0,30}$)[A-Za-z0-9 .,;:?!]*$");
     regex s("(?=^.{0,30}$).*[.]$");
     regex t("(?=^.{0,30}$)^[A-Z].*$");
-    regex u("[.,;:!?]{2,}");
-    bool meio_texto = regex_match(texto, r) ? true : false;
+    regex u(".*[.,;:!?]{2,}.*");
+    bool conteudo_texto = regex_match(texto, r) ? true : false;
     bool ponto_final = regex_match(texto, s) ? true : false;
     bool comeca_com_maiuscula = regex_match(texto, t) ? true : false;
     bool tem_pontuacao_dupla = regex_match(texto, u) ? true : false;
-    if (meio_texto           &&
+    if (conteudo_texto           &&
         ponto_final          &&
         comeca_com_maiuscula &&
         !tem_pontuacao_dupla) {

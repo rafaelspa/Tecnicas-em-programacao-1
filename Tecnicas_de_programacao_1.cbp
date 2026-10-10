@@ -80,6 +80,10 @@
 		<Unit filename="testes/entidades/tucartao.cpp" />
 		<Unit filename="testes/entidades/tucartao.hpp" />
 		<Unit filename="testes/entidades/tuentidades.hpp" />
+		<Unit filename="testes/entidades/tupessoa.cpp" />
+		<Unit filename="testes/entidades/tupessoa.hpp" />
+		<Unit filename="testes/entidades/tuprojeto.cpp" />
+		<Unit filename="testes/entidades/tuprojeto.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
