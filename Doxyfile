@@ -1,0 +1,15 @@
+PROJECT_NAME           = "KanbanTP1"
+PROJECT_BRIEF          = "Sistema de gestao de projetos Kanban - Tecnicas de Programacao 1"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = include src main.cpp
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+OPTIMIZE_OUTPUT_FOR_C  = NO
+JAVADOC_AUTOBRIEF      = YES
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = YES

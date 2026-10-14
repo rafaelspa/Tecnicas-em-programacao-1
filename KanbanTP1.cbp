@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="KanbanTP1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/KanbanTP1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-std=c++11" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/KanbanTP1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="include/dominio/Email.h" />
+		<Unit filename="src/dominio/Email.cpp" />
+		<Unit filename="include/dominio/Estado.h" />
+		<Unit filename="src/dominio/Estado.cpp" />
+		<Unit filename="include/dominio/Identificador.h" />
+		<Unit filename="src/dominio/Identificador.cpp" />
+		<Unit filename="include/dominio/Limite.h" />
+		<Unit filename="src/dominio/Limite.cpp" />
+		<Unit filename="include/dominio/Nome.h" />
+		<Unit filename="src/dominio/Nome.cpp" />
+		<Unit filename="include/dominio/Papel.h" />
+		<Unit filename="src/dominio/Papel.cpp" />
+		<Unit filename="include/dominio/Prioridade.h" />
+		<Unit filename="src/dominio/Prioridade.cpp" />
+		<Unit filename="include/dominio/Senha.h" />
+		<Unit filename="src/dominio/Senha.cpp" />
+		<Unit filename="include/dominio/Tamanho.h" />
+		<Unit filename="src/dominio/Tamanho.cpp" />
+		<Unit filename="include/dominio/Texto.h" />
+		<Unit filename="src/dominio/Texto.cpp" />
+		<Unit filename="include/dominio/Timestamp.h" />
+		<Unit filename="src/dominio/Timestamp.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
