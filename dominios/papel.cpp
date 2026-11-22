@@ -9,10 +9,9 @@ void Papel::setPapel(string papel) {
     }
 }
 
-
 void Papel::validar(string papel) {
-    if (papel != Papel::DESENVOLVEDOR &&
-        papel != Papel::GESTOR) {
+    if (papel != "DESENVOLVEDOR" &&
+        papel != "GESTOR") {
             throw invalid_argument("Papel invalido");
         }
 }

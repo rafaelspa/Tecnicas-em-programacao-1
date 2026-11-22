@@ -1,17 +1,23 @@
 #include "dominios/dominios.hpp"
 #include "entidades/entidades.hpp"
+#include "servicos/servicos.hpp"
 #include "testes/dominios/tudominios.hpp"
 #include "testes/entidades/tuentidades.hpp"
+#include "apresentacao/apresentaraplicacao.hpp"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    cout << "Teste Unitario Entidade: Quadro" << endl;
+    ServicoCriarTabelas sct;
+    ApresentarAplicacao ap;
 
-    TUQuadro tuquadro;
-
-    cout << tuquadro.run() << endl;
+    try {
+        sct.criarTabelas();
+    } catch (exception& ex) {
+        cout << ex.what() << endl;
+    }
+    ap.apresentarAplicacao();
 
     return 0;
 }

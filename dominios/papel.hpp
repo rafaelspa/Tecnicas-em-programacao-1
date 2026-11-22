@@ -6,8 +6,6 @@ private:
     string papel;
     void validar(string);
 public:
-    inline string static const GESTOR = "gestor";
-    inline string static const DESENVOLVEDOR = "desenvolvedor";
     string getPapel() const;
     void setPapel(string);
 };
