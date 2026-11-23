@@ -1,14 +1,15 @@
 #include <string>
 #include "../../dominios/dominios.hpp"
 #include "tudominios.hpp"
-// #include <iostream>
+
+/// Classe de teste para testar nome. Main de teste esta comentado abaixo.
 
 using namespace std;
 
- const string TUNome::VALOR_VALIDO = "Nome";
- const string TUNome::VALOR_INVALIDO  = "Nome invalido pelo tamanho";
+const string TUNome::VALOR_VALIDO = "Nome";
+const string TUNome::VALOR_INVALIDO  = "Nome invalido pelo tamanho";
 
- void TUNome::setUp(){
+void TUNome::setUp(){
     nome = new Nome();
     estado = SUCESSO;
 }

@@ -3,6 +3,8 @@
 #include "tudominios.hpp"
 #include <iostream>
 
+/// Classe de teste para testar texto. Main de teste esta comentado abaixo.
+
 using namespace std;
 
 const string TUTexto::VALOR_VALIDO = "Texto valido.";

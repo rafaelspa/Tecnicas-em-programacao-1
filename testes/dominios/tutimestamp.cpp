@@ -1,15 +1,15 @@
 #include <string>
 #include "../../dominios/dominios.hpp"
 #include "tudominios.hpp"
-// #include <iostream>
+
+/// Classe de teste para testar timestamp. Main de teste esta comentado abaixo.
 
 using namespace std;
 
+const string TUTimestamp::VALOR_VALIDO = "31-DEZ-2012-10:20";
+const string TUTimestamp::VALOR_INVALIDO  = "31-DEZ-2012-24:20";
 
- const string TUTimestamp::VALOR_VALIDO = "31-DEZ-2012-10:20";
- const string TUTimestamp::VALOR_INVALIDO  = "31-DEZ-2012-24:20";
-
- void TUTimestamp::setUp(){
+void TUTimestamp::setUp(){
     timestamp = new Timestamp();
     estado = SUCESSO;
 }

@@ -1,6 +1,6 @@
 #include "tuentidades.hpp"
 
-
+/// Classe de teste para testar cartao.
 
 void TUCartaoDeAtividade::setUp() {
     cartaoDeAtividade = new CartaoDeAtividade();

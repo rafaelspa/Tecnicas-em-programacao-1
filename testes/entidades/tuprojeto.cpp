@@ -1,5 +1,6 @@
 #include "tuentidades.hpp"
 
+/// Classe de teste para testar projeto.
 
 void TUProjeto::setUp() {
     projeto = new Projeto();

@@ -3,6 +3,8 @@
 #include "tudominios.hpp"
 #include <iostream>
 
+/// Classe de teste para testar senha. Main de teste esta comentado abaixo.
+
 using namespace std;
 
 const string TUSenha::VALOR_VALIDO = "senh1";

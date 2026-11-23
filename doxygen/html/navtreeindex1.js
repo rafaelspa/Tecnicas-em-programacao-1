@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"structsqlite3_1_1sqlite3_init_info.html":[0,0,134,0],
 "structsqlite3__api__routines.html":[0,0,135],
 "structsqlite3__backup.html":[0,0,136],
 "structsqlite3__context.html":[0,0,137],

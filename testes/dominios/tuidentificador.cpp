@@ -5,11 +5,12 @@
 
 using namespace std;
 
+/// Classe de teste para testar identificador. Main de teste esta comentado abaixo.
 
- const string TUIdentificador::VALOR_VALIDO = "abc123";
- const string TUIdentificador::VALOR_INVALIDO = "abcdef";
+const string TUIdentificador::VALOR_VALIDO = "abc123";
+const string TUIdentificador::VALOR_INVALIDO = "abcdef";
 
- void TUIdentificador::setUp(){
+void TUIdentificador::setUp(){
     identificador = new Identificador();
     estado = SUCESSO;
 }

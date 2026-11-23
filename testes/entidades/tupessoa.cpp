@@ -1,5 +1,6 @@
 #include "tuentidades.hpp"
 
+/// Classe de teste para testar pessoa.
 
 void TUPessoa::setUp() {
     pessoa = new Pessoa();

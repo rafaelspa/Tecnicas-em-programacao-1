@@ -4,6 +4,8 @@
 
 #include <iostream>
 
+/// Classe de teste para testar email. Main de teste esta comentado abaixo.
+
  using namespace std;
 
  const string TUEmail::VALOR_VALIDO = "email@email.com";
@@ -48,7 +50,8 @@ int TUEmail::run(){
     return estado;
 }
 
-
+//int main() {
+//try {
 //    string partelocal64 = "emailcom64caracteresparasertesteunitariodaclasseemailvalidacao12";
 //    string partelocal65 = "emailcom65caracteresparasertesteunitariodaclasseemailvalidacao123";
 //    string dominio255 = "emailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom255caracteresparasertesteunitariodaclasseemailcom25";
@@ -131,3 +134,7 @@ int TUEmail::run(){
 //    cout << "email65e255        " << email.validarEmail(email65e255) << endl;
 //    cout << "email64e256        " << email.validarEmail(email64e256) << endl;
 //    cout << endl;
+//} catch (exception& ex) {
+//    cout << ex.what() << endl;
+//}
+//}

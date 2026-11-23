@@ -4,7 +4,9 @@
 
 using namespace std;
 
- void TULimite::setUp(){
+/// Classe de teste para testar limite. Main de teste esta comentado abaixo.
+
+void TULimite::setUp(){
     limite = new Limite();
     estado = SUCESSO;
 }

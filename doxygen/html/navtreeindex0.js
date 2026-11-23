@@ -47,6 +47,7 @@ var NAVTREEINDEX0 =
 "files.html":[1,0],
 "functions.html":[0,2,0],
 "functions_func.html":[0,2,1],
+"functions_vars.html":[0,2,2],
 "identificador_8hpp_source.html":[1,0,1,3],
 "index.html":[],
 "limite_8hpp_source.html":[1,0,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "structfts5__api.html":[0,0,42],
 "structfts5__tokenizer.html":[0,0,43],
 "structfts5__tokenizer__v2.html":[0,0,44],
-"structsqlite3.html":[0,0,134],
-"structsqlite3_1_1sqlite3_init_info.html":[0,0,134,0]
+"structsqlite3.html":[0,0,134]
 };
