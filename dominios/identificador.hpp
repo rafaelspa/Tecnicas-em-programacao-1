@@ -1,6 +1,8 @@
 #ifndef IDENTIFICADOR_HPP_INCLUDED
 #define IDENTIFICADOR_HPP_INCLUDED
 
+/// Classe que implementa o dominio identificador
+
 class Identificador {
 private:
     string identificador;

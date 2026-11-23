@@ -1,6 +1,8 @@
 #ifndef QUADRO_HPP_INCLUDED
 #define QUADRO_HPP_INCLUDED
 
+/// Classe que implementa a entidade quadro
+
 class Quadro {
 private:
     Identificador identificador;

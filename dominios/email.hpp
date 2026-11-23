@@ -1,6 +1,8 @@
 #ifndef EMAIL_HPP_INCLUDED
 #define EMAIL_HPP_INCLUDED
 
+/// Classe que implementa o dominio email
+
 class Email {
 private:
     string email;

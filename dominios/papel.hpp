@@ -1,6 +1,8 @@
 #ifndef PAPEL_HPP_INCLUDED
 #define PAPEL_HPP_INCLUDED
 
+/// Dominio que implementa o dominio papel
+
 class Papel {
 private:
     string papel;

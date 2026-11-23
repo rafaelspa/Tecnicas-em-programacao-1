@@ -12,7 +12,7 @@ void ApresentarAplicacao::apresentarAplicacao() {
     while (true) {
         cout << endl;
         cout << "Selecione uma opcao:" << endl;
-        cout << "1 - Logar" << endl;
+//        cout << "1 - Logar" << endl;
         cout << "2 - Cadastrar" << endl;
         cout << "0 - Sair do programa" << endl;
         cout << endl;

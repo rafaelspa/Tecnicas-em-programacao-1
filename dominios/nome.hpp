@@ -3,6 +3,8 @@
 
 #include "dominios.hpp"
 
+/// Classe que implementa o dominio nome
+
 class Nome {
 private:
     string nome;

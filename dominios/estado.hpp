@@ -1,6 +1,8 @@
 #ifndef ESTADO_HPP_INCLUDED
 #define ESTADO_HPP_INCLUDED
 
+/// Classe que implementa o dominio estado
+
 class Estado {
 private:
     string estado;

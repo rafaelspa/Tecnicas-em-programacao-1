@@ -3,6 +3,8 @@
 
 #include "../entidades/entidades.hpp"
 
+/// Modulo utilizado como ponto de acesso do usuario às funcionalidades da aplicacao
+
 class ApresentarAplicacao {
 private:
     int opcao;

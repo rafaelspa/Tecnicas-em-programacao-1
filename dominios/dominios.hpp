@@ -1,6 +1,8 @@
 #ifndef DOMINIOS_HPP_INCLUDED
 #define DOMINIOS_HPP_INCLUDED
 
+/// Agregador de importacoes de dominios
+
 #include <string>
 #include <regex>
 #include <iostream>

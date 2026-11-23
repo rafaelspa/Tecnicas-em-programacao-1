@@ -1,6 +1,7 @@
 #include "servicos.hpp"
 #include <cstdio>
 
+/// Modulo para iniciar as tabelas pessoa, projeto, quadro e cartao. Para resetar as tabelas precisa deletar o arquivo "gestorprojeto.db"
 
 void ServicoCriarTabelas::criarTabelas() {
     sqlite3* db = nullptr;

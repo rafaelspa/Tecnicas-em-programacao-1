@@ -1,6 +1,8 @@
 #ifndef TEXTO_HPP_INCLUDED
 #define TEXTO_HPP_INCLUDED
 
+/// Classe que implementa o dominio texto
+
 class Texto {
 private:
     string texto;

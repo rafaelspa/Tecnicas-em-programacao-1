@@ -1,6 +1,8 @@
 #ifndef PRIORIDADE_HPP_INCLUDED
 #define PRIORIDADE_HPP_INCLUDED
 
+/// Classe que implementa o dominio prioridade
+
 class Prioridade {
 private:
     string prioridade;

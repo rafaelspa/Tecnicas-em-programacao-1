@@ -1,6 +1,8 @@
 #ifndef TIMESTAMP_HPP_INCLUDED
 #define TIMESTAMP_HPP_INCLUDED
 
+/// Classe que implementa o dominio timestamp
+
 class Timestamp {
 private:
     string timestamp;

@@ -1,6 +1,8 @@
 #ifndef ENTIDADES_HPP_INCLUDED
 #define ENTIDADES_HPP_INCLUDED
 
+/// Agregador de importacoes de entidades
+
 #include <string>
 #include <regex>
 

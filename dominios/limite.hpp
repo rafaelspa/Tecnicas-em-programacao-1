@@ -1,6 +1,8 @@
 #ifndef LIMITE_HPP_INCLUDED
 #define LIMITE_HPP_INCLUDED
 
+/// Classe que implementa o dominio limite
+
 class Limite {
 private:
     int limiteMinimo = 1;

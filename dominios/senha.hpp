@@ -1,6 +1,8 @@
 #ifndef SENHA_HPP_INCLUDED
 #define SENHA_HPP_INCLUDED
 
+/// Classe que implementa o dominio senha
+
 class Senha {
 private:
     string senha;

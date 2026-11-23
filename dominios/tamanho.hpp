@@ -1,6 +1,8 @@
 #ifndef TAMANHO_HPP_INCLUDED
 #define TAMANHO_HPP_INCLUDED
 
+/// Classe que implementa o dominio tamanho
+
 class Tamanho {
 private:
     string tamanho;

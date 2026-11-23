@@ -1,6 +1,7 @@
 #ifndef CARTAO_HPP_INCLUDED
 #define CARTAO_HPP_INCLUDED
 
+/// Classe que implementa a entidade Cartao de Atividade
 
 class CartaoDeAtividade {
 private:

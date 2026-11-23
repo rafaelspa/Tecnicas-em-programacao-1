@@ -1,6 +1,8 @@
 #ifndef PROJETO_HPP_INCLUDED
 #define PROJETO_HPP_INCLUDED
 
+/// Classe que implementa a entidade projeto
+
 class Projeto {
 private:
     Identificador identificador;

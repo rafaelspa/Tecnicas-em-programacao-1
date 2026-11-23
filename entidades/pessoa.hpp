@@ -1,6 +1,8 @@
 #ifndef PESSOA_HPP_INCLUDED
 #define PESSOA_HPP_INCLUDED
 
+/// Classe que implementa a entidade pessoa
+
 class Pessoa {
 private:
     Email email;
