@@ -6,7 +6,7 @@ void ServicoCriarTabelas::criarTabelas() {
     sqlite3* db = nullptr;
     char* erro = nullptr;
 
-    int status = remove("gestorprojeto.db");
+//    int status = remove("gestorprojeto.db"); para testes
 
     if (sqlite3_open("gestorprojeto.db", &db) != SQLITE_OK) {
         std::cerr << "Erro ao abrir: " << sqlite3_errmsg(db) << "\n";

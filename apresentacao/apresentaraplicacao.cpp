@@ -10,6 +10,7 @@ void ApresentarAplicacao::apresentarAplicacao() {
     cout << "=================================" << endl;
     cout << endl;
     while (true) {
+        cout << endl;
         cout << "Selecione uma opcao:" << endl;
         cout << "1 - Logar" << endl;
         cout << "2 - Cadastrar" << endl;
@@ -33,34 +34,33 @@ void ApresentarAplicacao::apresentarAplicacao() {
                 Senha senha;
                 Papel papel;
                 Pessoa pessoa;
-
-                try {
-                    cout << "Qual o email: ";
-                    cin >> strEmail;
-                    email.setEmail(strEmail);
-                    cout << "Qual o nome: ";
-                    cin >> strNome;
-                    nome.setNome(strNome);
-                    cout << "Qual a senha: ";
-                    cin >> strSenha;
-                    senha.setSenha(strSenha);
-                    while (true) {
-                        cout << "Qual o papel: " << endl;
-                        cout << "1-GESTOR" << endl;
-                        cout << "2-DESENVOLVEDOR" << endl;
-                        cout << "Opcao: ";
-                        cin >> opcao;
-                        switch (opcao) {
-                            case 1:
-                                papel.setPapel("GESTOR");
-                                pessoa.setPapel(papel);
-                                break;
-                            case 2:
-                                papel.setPapel("DESENVOLVEDOR");
-                                pessoa.setPapel(papel);
-                                break;
-                            default:
-                                cout << "Escolha uma opcao valida." << endl;
+                cout << "Qual o email: ";
+                cin >> strEmail;
+                email.setEmail(strEmail);
+                cout << "Qual o nome: ";
+                cin >> strNome;
+                nome.setNome(strNome);
+                cout << "Qual a senha: ";
+                cin >> strSenha;
+                senha.setSenha(strSenha);
+                while (true) {
+                    if (papel.getPapel() != " ") break;
+                    cout << "Selecione o papel: " << endl;
+                    cout << "1-GESTOR" << endl;
+                    cout << "2-DESENVOLVEDOR" << endl;
+                    cout << "Opcao: ";
+                    cin >> opcao;
+                    switch (opcao) {
+                        case 1:
+                            papel.setPapel("GESTOR");
+                            pessoa.setPapel(papel);
+                            break;
+                        case 2:
+                            papel.setPapel("DESENVOLVEDOR");
+                            pessoa.setPapel(papel);
+                            break;
+                        default:
+                            cout << "Escolha uma opcao valida." << endl;
                         }
                     }
                     pessoa.setEmail(email);
@@ -68,9 +68,6 @@ void ApresentarAplicacao::apresentarAplicacao() {
                     pessoa.setSenha(senha);
                     pessoa.setPapel(papel);
                     ServicoPessoa.cadastrarPessoa(pessoa);
-                } catch (exception& ex) {
-                    cout << ex.what() << endl;
-                }
                 break;
             }
             default:{

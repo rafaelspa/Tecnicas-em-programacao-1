@@ -15,7 +15,7 @@ void ServicoPessoa::cadastrarPessoa(Pessoa pessoa) {
     sqlite3_stmt* stmt = nullptr;
 
     const char* sqlInserir =
-        "INSERT INTO pessoas (email, nome, senha, papel) "
+        "INSERT INTO pessoa (email, nome, senha, papel) "
         "VALUES (?, ?, ?, ?);";
 
     if (sqlite3_prepare_v2(db, sqlInserir, -1, &stmt, nullptr) == SQLITE_OK) {
@@ -28,12 +28,10 @@ void ServicoPessoa::cadastrarPessoa(Pessoa pessoa) {
             std::cerr << "Erro ao inserir: " << sqlite3_errmsg(db) << "\n";
         }
     }
-}
+    cout << endl;
+    cout << "Cadastrado com sucesso." << endl;
+    cout << endl;
 
-static int callback(void* /*dados*/, int numCols, char** valores, char** nomes) {
-    for (int i = 0; i < numCols; i++) {
-        std::cout << nomes[i] << " = " << (valores[i] ? valores[i] : "NULL") << "  ";
-    }
-    std::cout << "\n";
-    return 0;
+    sqlite3_finalize(stmt);
+
 }
